@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF61430225ACDA0500B89B51 /* CrawlForPlaceIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61430125ACDA0500B89B51 /* CrawlForPlaceIDs.swift */; };
 		BF61430525ACDA2F00B89B51 /* JSONDecoderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61430425ACDA2F00B89B51 /* JSONDecoderHelper.swift */; };
+		BF61430825ACDEE900B89B51 /* DeepCrawl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61430725ACDEE900B89B51 /* DeepCrawl.swift */; };
 		BF9F533525ACD18500B0DCB7 /* MakeTheTripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F533425ACD18500B0DCB7 /* MakeTheTripApp.swift */; };
 		BF9F533725ACD18500B0DCB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F533625ACD18500B0DCB7 /* ContentView.swift */; };
 		BF9F533925ACD18700B0DCB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9F533825ACD18700B0DCB7 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		BF61430125ACDA0500B89B51 /* CrawlForPlaceIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrawlForPlaceIDs.swift; sourceTree = "<group>"; };
 		BF61430425ACDA2F00B89B51 /* JSONDecoderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderHelper.swift; sourceTree = "<group>"; };
+		BF61430725ACDEE900B89B51 /* DeepCrawl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepCrawl.swift; sourceTree = "<group>"; };
 		BF9F533125ACD18500B0DCB7 /* MakeTheTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeTheTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9F533425ACD18500B0DCB7 /* MakeTheTripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTheTripApp.swift; sourceTree = "<group>"; };
 		BF9F533625ACD18500B0DCB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				BF9F534525ACD25D00B0DCB7 /* LocationFunctions.swift */,
 				BF61430125ACDA0500B89B51 /* CrawlForPlaceIDs.swift */,
 				BF61430425ACDA2F00B89B51 /* JSONDecoderHelper.swift */,
+				BF61430725ACDEE900B89B51 /* DeepCrawl.swift */,
 			);
 			path = CrawlingAndSortingAlgorithms;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				BF9F534625ACD25D00B0DCB7 /* LocationFunctions.swift in Sources */,
 				BF9F533725ACD18500B0DCB7 /* ContentView.swift in Sources */,
 				BF61430525ACDA2F00B89B51 /* JSONDecoderHelper.swift in Sources */,
+				BF61430825ACDEE900B89B51 /* DeepCrawl.swift in Sources */,
 				BF61430225ACDA0500B89B51 /* CrawlForPlaceIDs.swift in Sources */,
 				BF9F533525ACD18500B0DCB7 /* MakeTheTripApp.swift in Sources */,
 			);

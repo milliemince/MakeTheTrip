@@ -7,6 +7,43 @@
 
 import Foundation
 
+//Place data type w/ two initializers
+struct Place {
+    //instance variables
+    let name: String
+    let location: String
+    let place_id: String
+    let rating: Float?
+    let user_ratings_total: Int?
+    let formatted_address: String
+    let website: String
+    let types: [String?]
+    
+    //minimal information, setting other variables as default values
+    init(name: String, location: String, place_id: String) {
+        self.name = name
+        self.location = location
+        self.place_id = place_id
+        rating = 0.0
+        formatted_address = ""
+        website = ""
+        user_ratings_total = 0
+        types = []
+    }
+    
+    //fully described place
+    init(name: String, location: String, place_id: String, rating: Float, formatted_address: String, website: String, user_ratings_total: Int, types: [String?]) {
+        self.name = name
+        self.location = location
+        self.place_id = place_id
+        self.rating = rating
+        self.formatted_address = formatted_address
+        self.website = website
+        self.user_ratings_total = user_ratings_total
+        self.types = types
+    }
+}
+
 //GOOGLE PLACES NEARBYSEARCH JSON DECODING STRUCTS
 
 //JSON DATA

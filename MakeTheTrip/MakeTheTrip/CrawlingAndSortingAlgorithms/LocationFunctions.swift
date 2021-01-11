@@ -298,3 +298,23 @@ func getRegionOfSpecificLocation(start: String, end: String, numStops: Int, spec
     }
     return 1
 }
+
+func preferencesToString(preferences: [String]) -> String {
+    var returnMe = ""
+    if preferences.count == 1 {
+        returnMe += preferences[0]
+        return returnMe
+    } else {
+        for preference in preferences {
+            returnMe += preference
+            returnMe += ", "
+        }
+        return returnMe
+    }
+}
+
+func removePref(array: inout [String], elt: String) -> [String] {
+    let index = array.firstIndex(of: elt)
+    array.remove(at: index!)
+    return array
+}
