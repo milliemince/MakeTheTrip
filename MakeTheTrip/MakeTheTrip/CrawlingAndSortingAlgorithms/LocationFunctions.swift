@@ -7,7 +7,7 @@
 
 import Foundation
 
-/**
+/*
  location is of the format "32.5672,-92.6748"
  returns value of latitude coordinate in Float type
  */
@@ -18,7 +18,7 @@ func getLatitude(location: String) -> Float {
     return lat
 }
 
-/**
+/*
  returns value of longitude coordinate in Float type
  */
 func getLongitude(location: String) -> Float {
@@ -29,7 +29,7 @@ func getLongitude(location: String) -> Float {
     return lng
 }
 
-/**
+/*
  determines the general direction of a trip
  
  returns 0 if northeast
@@ -64,7 +64,7 @@ func determineDirection(start: String, end: String) -> Int {
 }
 
 
-/**
+/*
  Google Places API can only search regions with a maximum boundary of 50,000 meters.
  To crawl the user's entire route, we must break the route into searchable location centers ~50,000 meters
  apart.
