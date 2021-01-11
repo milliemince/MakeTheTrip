@@ -29,7 +29,7 @@ class CrawlPlaceIDs {
         
                 var new_places = 0
                 var counter = 0 //to ensure correct indexing of JSON results
-                while new_places < 3 && counter < numResults {
+                while new_places < 2 && counter < numResults {
                     //ensures that we add at most 3 new place_ids at each searched location
                     let place_id1 = "\(decodedData.results![counter].place_id)"
                     if !place_ids.contains(place_id1) {
@@ -52,13 +52,15 @@ class CrawlPlaceIDs {
      */
     func crawl_route_for_ids(locations: [String], preferences: [String]) {
         print("Crawling")
+        var keyword_index = 0
         for keyword in preferences {
+            var location_index = 0
             for location in locations {
                 //generate URL
                 let urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + location + "&radius=\(boundary)&keyword=" + keyword + "&key=" + api_key
                 let url = URL(string: urlString)!
                 
-                if (keyword == preferences.last) && (location == locations.last) {
+                if (keyword_index == preferences.count - 1) && (location_index == locations.count - 1) {
                     //currently crawling the last location on the last keyword
                     let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
                             guard let data = data else { return }
@@ -84,7 +86,9 @@ class CrawlPlaceIDs {
                     })
                 task.resume()
             }
+            location_index += 1
         }
+        keyword_index += 1
         }
     }
 }

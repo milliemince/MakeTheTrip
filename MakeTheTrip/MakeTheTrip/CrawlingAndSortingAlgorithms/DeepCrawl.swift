@@ -28,34 +28,39 @@ class DeepCrawl {
                 let decodedData = try decoder.decode(PlaceDetailsResult.self, from: data)
                 
                 //get details
-                let name = "\(decodedData.result.name)"
-                let location = "\(decodedData.result.geometry.location.lat), \(decodedData.result.geometry.location.lng)"
-                let place_id = "\(decodedData.result.place_id)"
-                let rating = decodedData.result.rating ?? 0
-                let formatted_address = decodedData.result.formatted_address
-                let website = decodedData.result.website
-                let user_ratings_total = decodedData.result.user_ratings_total ?? 0
-                let types = decodedData.result.types
-                
-                if !StrikeList.contains(name) {
-                //construct place w/ fully described initializer
-                    let place = Place(name: name, location: location, place_id: place_id, rating: rating, formatted_address: formatted_address, website: website, user_ratings_total: user_ratings_total, types: types)
-                    flaggedPlaces.append(place)
+                if !(decodedData.result == nil) {
+                    let name = "\(decodedData.result!.name)"
+                    let location = "\(decodedData.result!.geometry.location.lat), \(decodedData.result!.geometry.location.lng)"
+                    let place_id = "\(decodedData.result!.place_id)"
+                    let types = decodedData.result!.types
+                    
+                    let rating = decodedData.result!.rating ?? 0
+                    let formatted_address = decodedData.result!.formatted_address
+                    let website = decodedData.result!.website ?? ""
+                    let user_ratings_total = decodedData.result!.user_ratings_total ?? 0
+                    
+                    if !StrikeList.contains(name) {
+                    //construct place w/ fully described initializer
+                        let place = Place(name: name, location: location, place_id: place_id, rating: rating, formatted_address: formatted_address, website: website, user_ratings_total: user_ratings_total, types: types)
+                        flaggedPlaces.append(place)
+                    }
                 }
+               
             }
         } catch {
-            
+            print(error)
         }
     }
 
     //generate URLSession scraping data for each place_id in self.place_ids
     func deep_crawl(place_ids: [String]) {
         print("Crawling")
+        var place_id_index = 0
         for place_id in place_ids {
             let urlString = "https://maps.googleapis.com/maps/api/place/details/json?key=" + api_key + "&place_id=" + place_id
                     let url = URL(string: urlString)!
             
-            if place_id == place_ids.last {
+            if place_id_index == place_ids.count - 1 {
                     let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
                         guard let data = data else { return }
                         if error == nil {
@@ -79,8 +84,9 @@ class DeepCrawl {
                 })
                 task.resume()
             }
-                }
+            place_id_index += 1
             }
+        }
     
     /*
      Sorts places by the total number of user ratings

@@ -274,7 +274,7 @@ func getRegionOfSpecificLocation(start: String, end: String, numStops: Int, spec
         
         //edge case: if this code is reached, none of the stop regions contained the specified value
         //so we return the one it is closest too by checking the first and last regions
-        if abs(lat) < abs(boundaries[0]![0]) {
+        if abs(lat) < abs(boundaries[1]![0]) {
             return 1
         }
         if abs(lat) > abs(boundaries[numStops]![1]) {
@@ -289,7 +289,7 @@ func getRegionOfSpecificLocation(start: String, end: String, numStops: Int, spec
                 return i
             }
         }
-        if abs(lng) < abs(boundaries[0]![0]) {
+        if abs(lng) < abs(boundaries[1]![0]) {
             return 1
         }
         if abs(lng) > abs(boundaries[numStops]![0]) {

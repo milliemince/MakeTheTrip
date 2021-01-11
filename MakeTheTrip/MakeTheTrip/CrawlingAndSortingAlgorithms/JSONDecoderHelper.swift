@@ -169,7 +169,7 @@ let jsonExample: [String: Any] = [
 struct ComponentsResult: Decodable {
     let long_name: String?
     let short_name: String?
-    let types: [String?]
+    let types: [String]?
 }
 
 struct DayTimePairResult: Decodable {
@@ -178,14 +178,14 @@ struct DayTimePairResult: Decodable {
 }
 
 struct PeriodsResult: Decodable {
-    let close: DayTimePairResult
-    let open: DayTimePairResult
+    let close: DayTimePairResult?
+    let open: DayTimePairResult?
 }
 
 struct ComplexOpeningResult: Decodable {
     let open_now: Bool?
     let periods: [PeriodsResult]
-    let weekday_text: [String?]
+    let weekday_text: [String]?
 }
 
 struct ReviewResult: Decodable {
@@ -209,24 +209,24 @@ struct DetailsResult: Decodable {
     let icon: String?
     let international_phone_number: String?
     let name: String
-    let opening_hours: ComplexOpeningResult
-    let photos: [Photo?]
+    let opening_hours: ComplexOpeningResult?
+    let photos: [Photo]?
     let place_id: String
     let plus_code: PlusCodeResult?
     let rating: Float?
     let reference: String?
-    let reviews: [ReviewResult?]
+    let reviews: [ReviewResult]?
     let types: [String?]
     let url: String?
     let user_ratings_total: Int?
     let utc_offset: Int?
     let vicinity: String?
-    let website: String
+    let website: String?
 }
 
 struct PlaceDetailsResult: Decodable {
     let html_attributions: [String]?
-    let result: DetailsResult
+    let result: DetailsResult?
     let status: String?
 }
 
