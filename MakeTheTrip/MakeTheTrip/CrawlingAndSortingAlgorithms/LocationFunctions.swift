@@ -7,6 +7,9 @@
 
 import Foundation
 
+let api_key: String = "" //TO USE THIS CODE, MUST GENERATE YOUR OWN API KEY
+let boundary: Int = 50000
+
 /*
  location is of the format "32.5672,-92.6748"
  returns value of latitude coordinate in Float type
