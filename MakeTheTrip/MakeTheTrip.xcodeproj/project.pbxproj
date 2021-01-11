@@ -11,6 +11,7 @@
 		BF9F533725ACD18500B0DCB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F533625ACD18500B0DCB7 /* ContentView.swift */; };
 		BF9F533925ACD18700B0DCB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9F533825ACD18700B0DCB7 /* Assets.xcassets */; };
 		BF9F533C25ACD18700B0DCB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9F533B25ACD18700B0DCB7 /* Preview Assets.xcassets */; };
+		BF9F534625ACD25D00B0DCB7 /* LocationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F534525ACD25D00B0DCB7 /* LocationFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		BF9F533825ACD18700B0DCB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF9F533B25ACD18700B0DCB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF9F533D25ACD18700B0DCB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9F534525ACD25D00B0DCB7 /* LocationFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		BF9F533325ACD18500B0DCB7 /* MakeTheTrip */ = {
 			isa = PBXGroup;
 			children = (
+				BF9F534425ACD21600B0DCB7 /* CrawlingAndSortingAlgorithms */,
 				BF9F533425ACD18500B0DCB7 /* MakeTheTripApp.swift */,
 				BF9F533625ACD18500B0DCB7 /* ContentView.swift */,
 				BF9F533825ACD18700B0DCB7 /* Assets.xcassets */,
@@ -67,6 +70,14 @@
 				BF9F533B25ACD18700B0DCB7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF9F534425ACD21600B0DCB7 /* CrawlingAndSortingAlgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F534525ACD25D00B0DCB7 /* LocationFunctions.swift */,
+			);
+			path = CrawlingAndSortingAlgorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9F534625ACD25D00B0DCB7 /* LocationFunctions.swift in Sources */,
 				BF9F533725ACD18500B0DCB7 /* ContentView.swift in Sources */,
 				BF9F533525ACD18500B0DCB7 /* MakeTheTripApp.swift in Sources */,
 			);
