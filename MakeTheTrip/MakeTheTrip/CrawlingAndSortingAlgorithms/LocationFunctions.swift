@@ -7,7 +7,8 @@
 
 import Foundation
 
-let api_key: String = "" //TO USE THIS CODE, MUST GENERATE YOUR OWN API KEY
+let api_key: String = ""
+ //TO USE THIS CODE, MUST GENERATE YOUR OWN API KEY
 let boundary: Int = 50000
 
 /*

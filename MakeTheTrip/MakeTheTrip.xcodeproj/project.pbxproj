@@ -11,6 +11,10 @@
 		BF61430525ACDA2F00B89B51 /* JSONDecoderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61430425ACDA2F00B89B51 /* JSONDecoderHelper.swift */; };
 		BF61430825ACDEE900B89B51 /* DeepCrawl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61430725ACDEE900B89B51 /* DeepCrawl.swift */; };
 		BF61430B25ACE10C00B89B51 /* TripGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61430A25ACE10C00B89B51 /* TripGeneration.swift */; };
+		BF61430F25ACF41700B89B51 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61430E25ACF41700B89B51 /* Preferences.swift */; };
+		BF61431225ACF47400B89B51 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61431125ACF47400B89B51 /* HelpView.swift */; };
+		BF61431525ACF78400B89B51 /* PreferencesButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61431425ACF78400B89B51 /* PreferencesButtonStyle.swift */; };
+		BF61431B25AD03D600B89B51 /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61431A25AD03D600B89B51 /* TripView.swift */; };
 		BF9F533525ACD18500B0DCB7 /* MakeTheTripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F533425ACD18500B0DCB7 /* MakeTheTripApp.swift */; };
 		BF9F533725ACD18500B0DCB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F533625ACD18500B0DCB7 /* ContentView.swift */; };
 		BF9F533925ACD18700B0DCB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9F533825ACD18700B0DCB7 /* Assets.xcassets */; };
@@ -23,6 +27,10 @@
 		BF61430425ACDA2F00B89B51 /* JSONDecoderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderHelper.swift; sourceTree = "<group>"; };
 		BF61430725ACDEE900B89B51 /* DeepCrawl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepCrawl.swift; sourceTree = "<group>"; };
 		BF61430A25ACE10C00B89B51 /* TripGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripGeneration.swift; sourceTree = "<group>"; };
+		BF61430E25ACF41700B89B51 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		BF61431125ACF47400B89B51 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		BF61431425ACF78400B89B51 /* PreferencesButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesButtonStyle.swift; sourceTree = "<group>"; };
+		BF61431A25AD03D600B89B51 /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
 		BF9F533125ACD18500B0DCB7 /* MakeTheTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeTheTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9F533425ACD18500B0DCB7 /* MakeTheTripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTheTripApp.swift; sourceTree = "<group>"; };
 		BF9F533625ACD18500B0DCB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF61430D25ACF3F500B89B51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F533625ACD18500B0DCB7 /* ContentView.swift */,
+				BF61430E25ACF41700B89B51 /* Preferences.swift */,
+				BF61431125ACF47400B89B51 /* HelpView.swift */,
+				BF61431425ACF78400B89B51 /* PreferencesButtonStyle.swift */,
+				BF61431A25AD03D600B89B51 /* TripView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BF9F532825ACD18500B0DCB7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +82,9 @@
 		BF9F533325ACD18500B0DCB7 /* MakeTheTrip */ = {
 			isa = PBXGroup;
 			children = (
+				BF61430D25ACF3F500B89B51 /* Views */,
 				BF9F534425ACD21600B0DCB7 /* CrawlingAndSortingAlgorithms */,
 				BF9F533425ACD18500B0DCB7 /* MakeTheTripApp.swift */,
-				BF9F533625ACD18500B0DCB7 /* ContentView.swift */,
 				BF9F533825ACD18700B0DCB7 /* Assets.xcassets */,
 				BF9F533D25ACD18700B0DCB7 /* Info.plist */,
 				BF9F533A25ACD18700B0DCB7 /* Preview Content */,
@@ -164,9 +184,13 @@
 				BF9F534625ACD25D00B0DCB7 /* LocationFunctions.swift in Sources */,
 				BF9F533725ACD18500B0DCB7 /* ContentView.swift in Sources */,
 				BF61430B25ACE10C00B89B51 /* TripGeneration.swift in Sources */,
+				BF61431B25AD03D600B89B51 /* TripView.swift in Sources */,
 				BF61430525ACDA2F00B89B51 /* JSONDecoderHelper.swift in Sources */,
+				BF61431525ACF78400B89B51 /* PreferencesButtonStyle.swift in Sources */,
+				BF61431225ACF47400B89B51 /* HelpView.swift in Sources */,
 				BF61430825ACDEE900B89B51 /* DeepCrawl.swift in Sources */,
 				BF61430225ACDA0500B89B51 /* CrawlForPlaceIDs.swift in Sources */,
+				BF61430F25ACF41700B89B51 /* Preferences.swift in Sources */,
 				BF9F533525ACD18500B0DCB7 /* MakeTheTripApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
