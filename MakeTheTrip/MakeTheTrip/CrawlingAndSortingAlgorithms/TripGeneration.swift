@@ -28,7 +28,7 @@ class Trip {
     let alternatesByRegion: [Int: [Place]] = [:]
     let alternatesByKeyword: [String: [Place]] = [:]
     var regionOccupied: [Bool] = []
-    let done: Bool = false
+    var done: Bool = false
     
     init(start: String, end: String, waypoints: [String], preferences: [String], numStops: Int) {
         self.start = start
@@ -87,6 +87,7 @@ class Trip {
             counter += 1
         }
         printData()
+        done = true
     }
 
 }
