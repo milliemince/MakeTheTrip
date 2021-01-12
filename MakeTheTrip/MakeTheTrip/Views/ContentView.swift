@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Preferences(start: "", end: "", numStops: 0, preferences: [])    }
+        Preferences(start: "", end: "", numStops: 0, preferences: [])
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

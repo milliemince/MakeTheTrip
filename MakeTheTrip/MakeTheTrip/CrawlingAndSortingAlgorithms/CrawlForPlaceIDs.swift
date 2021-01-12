@@ -4,7 +4,6 @@
 //
 //  Created by Camille Mince on 12/30/20.
 //
-
 import Foundation
 
 /*
@@ -92,6 +91,8 @@ class CrawlPlaceIDs {
         }
     }
 }
+
+
 
 
 
