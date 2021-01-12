@@ -7,10 +7,10 @@ Automated roadtrip planning app - with simple data about a user's preferences an
 Responsible for executing the actual itinerary generation algorithm. 
   * ```CrawlForPlaceIDs```
   
-    An object in this class has two instance variables - one to store the Google Place IDs of locations picked up along the crawl, and one to tell whether the crawl     is complete.
+    An object in this class has two instance variables - one to store the Google Place IDs of locations picked up along the crawl, and one to tell whether the crawl     is complete. Uses Google Places API NearBySearch request.
   * ```DeepCrawl```
   
-    Similar to ```CrawlForPlaceIDs```, but instead queries place IDs to store more detailed information about flagged locations along the route
+    Similar to ```CrawlForPlaceIDs```, but instead queries place IDs to store more detailed information about flagged locations along the route. Uses Google Places API PlaceDetails request.
   * ```JSONDecoderHelper```
   
     Contains structs to aid URLRequest JSONDecoder. This outlines all of the information that is obtained from Google NearBySearch and PlaceDetails requests.
